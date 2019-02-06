@@ -79,7 +79,7 @@ conf:
 ## Init: 
 init:
 ifeq "$(INIT_MODULE_SRC)" "1"
-	git clone https://gitlab.esss.lu.se/icshwi/lotz-hdf5 hdf5
+	git clone https://gitlab.esss.lu.se/icshwi/lotz-hdf5.git hdf5
 	cd $(MODULE_SRC_PATH) && git checkout $(MODULE_TAG)
 else
 	$(QUIET)echo "$(MODULE_SRC_PATH) exists. make distclean first, if one would like to restart it."
